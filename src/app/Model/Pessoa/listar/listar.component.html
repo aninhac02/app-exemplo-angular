@@ -16,10 +16,10 @@
                 </thead>
 
                 <tbody>
-                    <tr>
-                        <td></td>
-                       <td></td>
-                       <td></td>
+                    <tr *ngFor="let pessoa of listaPessoas">
+                       <td>{{pessoa.id}}</td>
+                       <td>{{pessoa.nome}}</td>
+                       <td>{{pessoa.sobrenome}}</td>
                        <td>
                            <button>editar</button>
                            <button>excluir</button>
