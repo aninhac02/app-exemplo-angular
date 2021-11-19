@@ -7,7 +7,7 @@ import { ListarComponent } from './Model/Pessoa/listar/listar.component';
 const routes: Routes = [
   {path: 'listar', component: ListarComponent},
   {path: 'adicionar', component: AdicionarComponent},
-  {path: 'editar', component: EditarComponent}
+  {path: 'editar/:id', component: EditarComponent}
 ];
 
 @NgModule({

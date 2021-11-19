@@ -20,4 +20,12 @@ export class ServicoService {
    addPessoa(pessoa: Pessoa){
      return this.http.post<Pessoa>(this.urlBase, pessoa);
    }
+
+   getPessoaById(id: any){
+     return this.http.get<Pessoa>(this.urlBase+"/"+id);
+   }
+
+   updatePessoa(pessoa: Pessoa){
+     return this.http.put<Pessoa>(this.urlBase+"/"+pessoa.id, pessoa);
+   }
 }

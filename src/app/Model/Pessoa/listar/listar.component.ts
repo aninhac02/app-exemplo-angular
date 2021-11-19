@@ -18,5 +18,9 @@ ngOnInit(){
     this.listaPessoas = data;
   })
 }
+
+editar(id: any): void {
+  localStorage.setItem("id",id.toString());
+}
  
 }
